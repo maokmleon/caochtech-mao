@@ -346,6 +346,7 @@ header {
   background-image: url(../img/company.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
 }
 
 .left h2,
@@ -362,6 +363,7 @@ header {
   background-image: url(../img/recruit.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
 }
 
 .right h2,
@@ -369,19 +371,27 @@ header {
   color: #fff;
 }
 
-.right p {
-  text-align: center;
-}
+
+
 
 .company-content {
-  padding: 50px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
 }
 
 .faq {
+  display: flex;
+  justify-content: center;
+  padding: 60px;
+}
+.company-bottom {
   background-color: #000;
   margin-top: 50px;
   height: 100px;
   padding: 0;
+  width: 60%;
   position: relative;
 }
 
